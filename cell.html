@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            height: 200px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: 200px;
+            margin: auto;
+           
+        }
+        #d1{
+            position: relative;
+            top: 300px;
+            left: 600px;
+        }
+        #d2{
+            margin-left: 10px;
+            padding-right: 100px;
+            
+        }
+        #btn{
+            position: relative;
+            top: 10px;
+            left: 100px;
+            
+        }
+        #d3{
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    
+    <table border="">
+        <tr>
+            <td id="1">1</td>
+            <td id="2">2</td>
+            <td id="3">3</td>
+        </tr>
+
+        <tr>
+            <td id="4">4</td>
+            <td id="5">5</td>
+            <td id="6">6</td>
+        </tr>
+
+        <tr>
+            <td id="7">7</td>
+            <td id="8">8</td>
+            <td id="9">9</td>
+        </tr>
+    </table>
+    
+    <div id="d1">
+        <div id="d2">
+        <label>Enter Cell number:</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <label for="clr">Enter color:</label><br>
+        </div>
+        <div id="d3">
+       <select name="cell" id="cell">
+        <option value="">select Cell number:</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+       </select>
+        <input type="color" name="clr" id="clr">
+         </div>
+         <div>
+            <button id="btn" type="button" onclick="changeclr()">changeColor</button>
+         </div>
+    </div>
+
+    <input type="text" name="cell" id="cell" placeholder="enter 1 to 9 number">
+    <script>
+        function changeclr()
+        {
+        let cellno=document.getElementById("cell").value;
+        let bgclr=document.getElementById("clr").value;
+
+        if(cellno ==1)
+        {
+            document.getElementById("1").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==2)
+        {
+            document.getElementById("2").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==3)
+        {
+            document.getElementById("3").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==4)
+        {
+            document.getElementById("4").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==5)
+        {
+            document.getElementById("5").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==6)
+        {
+            document.getElementById("6").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==7)
+        {
+            document.getElementById("7").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==8)
+        {
+            document.getElementById("8").style.backgroundColor=bgclr;
+        }
+        else if(cellno ==9)
+        {
+            document.getElementById("9").style.backgroundColor=bgclr;
+        }
+
+    }
+    </script>
+</body>
+</html>
